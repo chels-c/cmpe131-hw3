@@ -6,7 +6,7 @@ myobj = Flask(_name_)
 
 @myobj.route("/home")
 def home():
-	'''
+	return '''
 	<html>
 	<head>
 	</head>
