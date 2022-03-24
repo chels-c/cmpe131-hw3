@@ -6,6 +6,7 @@ myobj = Flask(_name_)
 
 @myobj.route("/home")
 def home():
+	'''
 	<html>
 	<head>
 	</head>
@@ -19,5 +20,5 @@ def home():
 		</ul>
 	</body>
 	</html>
-
+	'''
 #myapp_obj.run()
