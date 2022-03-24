@@ -19,6 +19,5 @@ def home():
   		{% endfor %}
 		</ul>
 	</body>
-	</html>
-	'''
+	</html>'''
 #myapp_obj.run()
