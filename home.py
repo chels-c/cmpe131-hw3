@@ -2,7 +2,7 @@ from flask import Flask, url_for
 global name
 global city_names
 
-myobj = Flask(_name_)
+myobj = Flask(__name__)
 
 @myobj.route("/home")
 def home():
