@@ -14,8 +14,8 @@ def home():
 		<h1>Welcome '''  + name '''</h1>
 		<a href="www.google.com">not google </a>
 		<ul>
-		{% for city.name in city_names %}
-       			<li>city</li>
+		{% for city in city_names %}
+       			<li>city.name</li>
   		{% endfor %}
 		</ul>
 	</body>
