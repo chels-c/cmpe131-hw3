@@ -1,4 +1,4 @@
-from flask import flask, url_for
+from flask import Flask, url_for
 global name
 global city_names
 
