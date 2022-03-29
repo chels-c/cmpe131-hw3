@@ -8,7 +8,7 @@ name = 'chels'
 city_names = ["city1", "city2"]
 
 class SubmitForm(FlaskForm):
-	CityName = StringField('City Name', validators = [DataRequired()]
+	cityName = StringField('City Name', validators = [DataRequired()]
 	submit = SubmitField('Submit')
 			       
 			       
@@ -16,7 +16,7 @@ class SubmitForm(FlaskForm):
 def home():
 	form = SubmitForm()
 	if form.validate_on_submit():
-		flash(form.CityName.data)
+		flash(form.cityName.data)
 	return render_template("home.html", name = name,city_names = city_names, form=form)
 """
 @myobj.route('/submit', methods = ['GET', 'POST'])
