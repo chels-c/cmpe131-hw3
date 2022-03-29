@@ -6,4 +6,4 @@ city_names = ["city1", "city2"]
 
 @myobj.route('/')
 def home():
-	return return_template(home.html, name = name)
+	return render_template(home.html, name = name, city_names = city_names)
