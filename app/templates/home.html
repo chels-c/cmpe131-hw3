@@ -9,6 +9,12 @@
        		<li>{{city}}</li>
   	{% endfor %}
 	</ul>
-	<form action = "" method = "POST" novalidate>	
+	<form action ="" method = "POST" novalidate>	
+	<p>
+		{{form.CityName.label}}
+		{{form.CityName(size = 32)}}
+	</p>
+	<p>{{form.submit()}}</p>
+	</form>
 </body>
 </html>
