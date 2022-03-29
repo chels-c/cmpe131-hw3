@@ -2,19 +2,28 @@
 <head>
 </head>
 <body>
-	<h1>Welcome {{name}} !</h1>
+    {% with flashed_messages = get_flashed_messages() %}
+        {% if flashed_messages %}
+        <ul>
+            {% for flashed_message in flashed_messages %}
+            <li>{{ flashed_message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+	<h1>Welcome {{name}}!</h1>
 	<a href="www.google.com">not google </a>
 	<ul>
 	{% for city in city_names %}
        		<li>{{city}}</li>
   	{% endfor %}
 	</ul>
-	<form action ="" method = "POST" novalidate>	
+	<form action = "" method="POST" novalidate>
 	<p>
-		{{form.CityName.label}}
-		{{form.CityName(size = 32)}}
+		{{form.CityName.label}}<br>
+		{{form.CityName(size=32)}}
 	</p>
 	<p>{{form.submit()}}</p>
-	</form>
+    </form>
 </body>
 </html>
