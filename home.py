@@ -1,6 +1,6 @@
 from flask import Flask, url_for
-global name
-global city_names
+name = ''
+city_names = ''
 
 myobj = Flask(__name__)
 
