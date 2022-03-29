@@ -1,8 +1,8 @@
 from app import myobj
 from flask import render_template, flash
 
-global name
-global city_names
+name = ''
+city_names = ["city1", "city2"]
 
 @myobj.route('/')
 def home():
