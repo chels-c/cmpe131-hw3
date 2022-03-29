@@ -8,7 +8,7 @@ city_names = ["city1", "city2"]
 def home():
 	return render_template("home.html", name = name,city_names = city_names)
 
-@myobj.route('/submit')
+@myobj.route('/submit', methods = ['GET', 'POST'])
 def submit():
 	form = SubmitForm()
 	if form.validate_on_submit():
