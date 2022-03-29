@@ -8,7 +8,7 @@ name = 'chels'
 city_names = ["city1", "city2"]
 
 class SubmitForm(FlaskForm):
-	cityName = StringField('City Name', validators = [DataRequired()]
+	cityName = StringField('City Name', validators = [DataRequired()])
 	submit = SubmitField('Submit')
 			       
 			       
