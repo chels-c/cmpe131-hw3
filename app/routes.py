@@ -1,5 +1,8 @@
 from app import myobj
 from flask import render_template, flash
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
 
 name = 'chels'
 city_names = ["city1", "city2"]
