@@ -7,6 +7,11 @@ from wtforms.validators import DataRequired
 name = 'chels'
 city_names = ["city1", "city2"]
 
+class SubmitForm(FlaskForm):
+	CityName = StringField('City Name', validators = [DataRequired()]
+	submit = SubmitField('Submit')
+			       
+			       
 @myobj.route('/', methods = ['GET', 'POST'])
 def home():
 	form = SubmitForm()
@@ -23,6 +28,3 @@ def submit():
 		return redirect('/')
 	return render_template('home.html', title = 'submit', form = form)
 """
-class SubmitForm(FlaskForm):
-	CityName = StringField('City Name', validators = [DataRequired()]
-	submit = SubmitField('Submit')
