@@ -1,0 +1,11 @@
+{% extends "home.html" %}
+
+{%block content%}
+	<form action ="" method="post" novalidate>
+	{{form.hidden_tag()}}
+	<p>
+		{{form.CityName.label}}<br>
+		{{form.CityName(size=32)}}
+	</p>
+	<p>{{form.submit()}}</p>
+{% endblock %}
