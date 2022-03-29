@@ -6,18 +6,18 @@ myobj = Flask(__name__)
 
 @myobj.route("/home")
 def home():
-	return """
-	<html>
+	html =  """
 	<head>
 	</head>
 	<body>
-		<h1>Welcome """  + name + """ </h1>
+		<h1>Welcome """  + name + """</h1>
 		<a href="www.google.com">not google </a>
 		<ul>
-		{% for city in city_names %}
-       			<li>city.name</li>
-  		{% endfor %}
-		</ul>
-	</body>
-	</html>"""
+	"""
+	for city in city_names:
+		html = html + "<li>" + city + "</li>"
+		html = html + """</ul> </body>"""
+	return html
+	
+
 #myapp_obj.run()
